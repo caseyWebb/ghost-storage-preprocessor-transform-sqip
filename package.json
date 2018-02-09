@@ -1,0 +1,33 @@
+{
+  "name": "ghost-storage-preprocessor-transform-sqip",
+  "version": "0.0.0",
+  "description": "SQIP Storage Preprocessor for Ghost",
+  "main": "dist/index.js",
+  "repository": "https://github.com/caseyWebb/ghost-storage-preprocessor-transform-sqip",
+  "author": "Casey Webb <notcaseywebb@gmail.com>",
+  "license": "WTFPL",
+  "keywords": [
+    "ghost",
+    "sqip",
+    "image",
+    "processing",
+    "placeholder",
+    "ghost-storage-preprocessor-transform"
+  ],
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "lint": "tslint -p tsconfig.json"
+  },
+  "devDependencies": {
+    "@types/node": "^9.4.4",
+    "tslint": "^5.9.1",
+    "typescript": "^2.7.1"
+  },
+  "dependencies": {
+    "sqip": "^0.2.2",
+    "tslib": "^1.9.0"
+  }
+}
