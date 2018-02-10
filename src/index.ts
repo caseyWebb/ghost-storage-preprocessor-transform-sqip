@@ -1,9 +1,6 @@
 import * as fs from 'fs'
 import * as path from 'path'
-import { promisify } from 'util'
 import * as sqip from 'sqip'
-
-const writeFile = promisify(fs.writeFile)
 
 type Image = {
   name: string
@@ -25,7 +22,8 @@ module.exports = class GhostStoragePreprocessorSqipTransform implements IGhostSt
       mimetype: 'image/svg',
       type: 'image/svg'
     })
-    await writeFile(sqipPath, res.final_svg)
+    await new Promise((resolve, reject) =>
+      fs.writeFile(sqipPath, res.final_svg, (err) => err ? reject(err) : resolve()))
     return [
       [image, targetDir],
       [sqipImage, targetDir]
