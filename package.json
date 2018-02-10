@@ -1,6 +1,6 @@
 {
   "name": "ghost-storage-preprocessor-transform-sqip",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "SQIP Storage Preprocessor for Ghost",
   "main": "dist/index.js",
   "repository": "https://github.com/caseyWebb/ghost-storage-preprocessor-transform-sqip",
